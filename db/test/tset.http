@@ -1,0 +1,15 @@
+GET http://localhost:4004/odata/v4/employeesrv/personaldetails?$expand=Address HTTP/1.1
+
+###
+POST   http://localhost:4004/odata/v4/employeesrv/personaldetails HTTP/1.1
+Content-Type: application/json
+
+  {
+      "fName": "John",
+      "lName": "Doe",
+      "gender": "Male",
+      "DOB": "1990-02-01",
+      "contractStarted": "2012-03-11",
+      "email": "JohnDoe1@gmail.com",
+      "phone": "8512543279"
+    }
