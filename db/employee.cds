@@ -4,13 +4,14 @@ using {cuid} from '@sap/cds/common';
 using {reuse.types} from './resuse';
 
 
-entity personaldetails : cuid{
+entity personaldetails : cuid {
 
-      
+
     fName           : String;
     lName           : String;
     gender          : String;
     DOB             : Date;
+    AGE             : Integer;
     contractStarted : Date;
     email           : types.Email;
     phone           : types.phone;
@@ -22,11 +23,11 @@ entity personaldetails : cuid{
 }
 
 entity Address : cuid {
-    city       : String;
-    address    : String;
-    pincode    : Integer;
-    street     : String;
-    landmark   : String;
+    city     : String;
+    address  : String;
+    pincode  : Integer;
+    street   : String;
+    landmark : String;
     employee : Composition of personaldetails;
 }
 
