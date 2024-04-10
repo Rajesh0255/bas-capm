@@ -8,12 +8,22 @@
   "dependencies": {
     "@cap-js-community/odata-v2-adapter": "^1.12.8",
     "@sap/cds": "^7",
-    "express": "^4"
+    "@sap/cds-hana": "^2",
+    "express": "^4",
+    "npx": "^10.2.2",
+    "@sap/xssec": "^3"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1"
+    "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7"
   },
   "scripts": {
     "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "db": "hana",
+      "auth": "xsuaa"
+    }
   }
 }

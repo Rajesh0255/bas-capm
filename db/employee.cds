@@ -32,11 +32,11 @@ entity Address : cuid {
 }
 
 entity salary : cuid {
-    costToCompany : Integer;
-    employeePf    : Integer;
-    employerpf    : Integer;
-    nps           : Integer;
-    vpf           : Integer;
+    costToCompany : Decimal;
+    employeePf    : Decimal;
+    employerpf    : Decimal;
+    nps           : Decimal;
+    vpf           : Decimal;
 }
 
 entity Department : cuid {
